@@ -1,0 +1,33 @@
+@media screen and (max-width: 990px) {
+          .container {
+                    main {
+                              width: 90%;
+                    }
+          }
+}
+@media screen and (max-width: 750px) {
+          .container {
+                    main {
+                              width: 95%;
+                    }
+          }
+}
+
+@media screen and (max-width: 600px) {
+          .container {
+                    main {
+                              height: unset;
+                              .holder {
+                                        width: 200%;
+                                        form{
+                                                  &.active{
+                                                            transform: translateX(-100%);
+                                                  }
+                                        }
+                              }
+                              .img {
+                                        display: none;
+                              }
+                    }
+          }
+}

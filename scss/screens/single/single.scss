@@ -1,0 +1,109 @@
+@import "../../variables";
+@import "../../utils";
+@import "../../footer";
+@import "../../header";
+body {
+          background: radial-gradient(#f0483a, #d10a20);
+}
+.food {
+          @include Flex(flex-start, space-between);
+          padding: 0 20px;
+          padding-top: 70px;
+          margin-bottom: 20px;
+          height: calc(100vh - 130px);
+          .left-side {
+                    @include Flex(flex-start);
+                    width: 75%;
+                    background-color: $white;
+                    padding: 20px;
+                    border-radius: 25px;
+                    .images {
+                              width: 100%;
+                              overflow: hidden;
+                              border-radius: 25px;
+                              position: relative;
+                              .list {
+                                        width: 200%;
+                                        height: 400px;
+                                        @include Flex(flex-start);
+                                        img {
+                                                  width: 50%;
+                                                  height: 100%;
+                                        }
+                              }
+                              .pagination {
+                                        width: 50%;
+                                        @include Flex(center, center, row, 5px);
+                                        position: absolute;
+                                        left: 25%;
+                                        border-radius: 40px;
+                                        bottom: 20px;
+                                        height: 70px;
+                                        background-color: rgba(255, 255, 255, 0.3);
+                                        backdrop-filter: blur(10px);
+                                        .dot {
+                                                  width: 10px;
+                                                  height: 10px;
+                                                  border-radius: 50%;
+                                                  background-color: $light-text;
+                                                  cursor: pointer;
+                                                  &.active {
+                                                            background-color: rgb(0, 140, 255);
+                                                            width: 20px;
+                                                            border-radius: 40px;
+                                                  }
+                                        }
+                              }
+                    }
+                    .details {
+                              margin-left: 20px;
+                              h1 {
+                                        color: $text;
+                                        font-size: 30px;
+                                        font-weight: 600;
+                              }
+                              ul {
+                                        margin-top: 30px;
+                                        @include Flex(flex-start, unset, column);
+                                        & > li {
+                                                  max-width: 70%;
+                                                  color: $text;
+                                                  margin-bottom: 20px;
+                                                  text-transform: capitalize;
+                                                  span {
+                                                            color: $red;
+                                                  }
+                                                  &.rating {
+                                                            @include Flex(center);
+                                                            ion-icon {
+                                                                      color: rgb(255, 196, 0);
+                                                            }
+                                                            span {
+                                                                      color: $text;
+                                                                      margin-bottom: 5px;
+                                                            }
+                                                            ul {
+                                                                      margin-left: 10px;
+                                                                      margin-top: 0;
+                                                                      @include Flex(center, unset, row, 10px);
+                                                                      li {
+                                                                                margin-bottom: 0;
+                                                                      }
+                                                            }
+                                                  }
+                                        }
+                              }
+                    }
+          }
+          .right-side {
+                    width: 100%;
+                    max-width: 300px;
+                    background-color: $white;
+                    border-radius: 25px;
+                    padding: 20px;
+          }
+}
+footer {
+          background-color: $white;
+          padding: 10px;
+}

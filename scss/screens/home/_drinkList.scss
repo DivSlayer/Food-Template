@@ -1,0 +1,74 @@
+
+.drink-list {
+          background-color: $red;
+          margin-top: 20px;
+          padding: 10px 50px;
+          padding-bottom: 50px;
+          .header {
+                    font-size: 40px;
+                    text-align: center;
+                    width: 100%;
+                    color: $white;
+          }
+          .foods {
+                    width: 100%;
+                    @include Flex(flex-start, unset, row, 2%, 40px);
+                    flex-wrap: wrap;
+                    margin-top: 20px;
+                    li {
+                              width: 32%;
+                              border-radius: 20px;
+                              border-radius: 25px;
+                              overflow: hidden;
+                              background-color: $white;
+                              padding: 10px;
+                              box-shadow: none !important;
+                              &.hidden {
+                                        width: 0;
+                                        padding: 0;
+                                        opacity: 0;
+                                        visibility: hidden;
+                              }
+                              .img {
+                                        width: 100%;
+                                        border-radius: 25px;
+                                        overflow: hidden;
+                                        height: 300px;
+                                        img {
+                                                  height: 100%;
+                                                  width: 100%;
+                                        }
+                                        &:hover {
+                                                  img {
+                                                            transform: scale(1.1);
+                                                  }
+                                        }
+                              }
+                              .details {
+                                        h3 {
+                                                  color: $red;
+                                                  margin-top: 15px;
+                                                  margin-bottom: 5px;
+                                                  font-size: 25px;
+                                                  font-weight: 600;
+                                        }
+                                        p {
+                                                  color: $light-text;
+                                                  font-weight: 400;
+                                                  font-size: 16px;
+                                                  padding: 0 10px;
+                                                  padding-bottom: 15px;
+                                        }
+                              }
+                              .funcs {
+                                        @include Flex(center, space-between);
+                                        .btn {
+                                                  padding: 13px 24px;
+                                                  &:hover {
+                                                            letter-spacing: unset !important;
+                                                  }
+                                        }
+                              }
+                    }
+          }
+}

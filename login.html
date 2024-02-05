@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Login</title>
+          <link rel="stylesheet" href="dist/css/login.min.css">
+</head>
+
+<body>
+          <div class="container">
+                    <main>
+                              <div class="img signup">
+                                        <img src="img/logo.svg" alt="">
+                                        <a href="index.html" class="go-home" title="Go Home">
+                                                  <ion-icon name="arrow-back-outline" title="Go Home"
+                                                            data-title="Go Home"></ion-icon>
+                                        </a>
+                              </div>
+                              <div class="holder">
+                                        <form action="#" class="signin-form">
+                                                  <div class="header">
+                                                            <h2 class="title">Login</h2>
+                                                            <p>Login to your account</p>
+                                                  </div>
+                                                  <div class="form-group">
+                                                            <label for="username">Username</label>
+                                                            <input type="text" name="username" id="username"
+                                                                      placeholder="Enter your username"
+                                                                      autocomplete="off">
+                                                  </div>
+                                                  <div class="form-group">
+                                                            <label for="password">Password</label>
+                                                            <input type="password" name="password" id="password"
+                                                                      autocomplete="off"
+                                                                      placeholder="Enter your password">
+                                                  </div>
+                                                  <div class="funcs">
+                                                            <button type="submit" class="btn btn-red submit-btn">Sign
+                                                                      In</button>
+                                                            <p>Don't have an account? <button
+                                                                                id="go-signup">Signup</button></p>
+                                                  </div>
+                                        </form>
+                                        <form action="#" class="signup-form">
+                                                  <div class="header">
+                                                            <h2 class="title">Register</h2>
+                                                            <p>Create a new account</p>
+                                                  </div>
+                                                  <div class="form-group">
+                                                            <label for="username">Username</label>
+                                                            <input type="text" name="username" id="username"
+                                                                      placeholder="Enter your username"
+                                                                      autocomplete="off">
+                                                  </div>
+                                                  <div class="form-group">
+                                                            <label for="email">Email</label>
+                                                            <input type="email" name="email" id="email"
+                                                                      placeholder="Enter your email" autocomplete="off">
+                                                  </div>
+                                                  <div class="form-group">
+                                                            <label for="password">Password</label>
+                                                            <input type="password" name="password" id="password"
+                                                                      placeholder="Enter your password"
+                                                                      autocomplete="off">
+                                                  </div>
+                                                  <div class="funcs">
+                                                            <button type="submit" class="btn btn-red submit-btn">Sign
+                                                                      Up</button>
+                                                            <p>Already have an account? <button
+                                                                                id="go-login">Login</button></p>
+                                                  </div>
+                                        </form>
+                              </div>
+                    </main>
+          </div>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+                    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <script src="js/login.js"></script>
+</body>
+
+</html>

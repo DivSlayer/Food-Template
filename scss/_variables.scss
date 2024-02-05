@@ -1,0 +1,13 @@
+$red: #d10a20;
+$white: #fff;
+$light-text: #504646;
+$text: #222;
+
+@mixin Flex($align: unset, $justifyContent: unset, $flexDir: row, $colGap: unset, $rowGap: unset) {
+          display: flex;
+          justify-content: $justifyContent;
+          flex-direction: $flexDir;
+          column-gap: $colGap;
+          align-items: $align;
+          row-gap: $rowGap;
+}

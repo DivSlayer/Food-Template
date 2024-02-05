@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #d8d4d4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #8f0717;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #56040e;
+}
+::-moz-selection {
+    /* Code for Firefox */
+    color: $white;
+    background: $red;
+}
+
+::selection {
+    color: $white;
+    background: $red;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.3s ease;
+    scroll-behavior: smooth;
+}
+body {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input,
+button {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.text-red {
+    color: $red !important;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    font-weight: 500;
+    padding: 20px 50px;
+    border-radius: 40px;
+    transition: 0.25s;
+    &:hover {
+        letter-spacing: 2px;
+    }
+    &.btn-red {
+        background-color: $red;
+        border: 2px solid $red;
+        color: $white;
+        font-weight: 500;
+        &:hover {
+            background-color: transparent;
+            color: $red;
+        }
+    }
+}
+
+.goTop {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 12345;
+    background-color: $red;
+    @include Flex(center, center);
+    transform: rotate(45deg);
+    cursor: pointer;
+    border: 3px solid var(--white);
+    ion-icon {
+        transform: rotate(-45deg);
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    transition: all 0.3s ease;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input, button {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+body{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Colors */
+:root{
+    --light-purple: #9292c8;
+}
+
+/* Main */
+.container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.bg{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 123;
+}
+
+.bg img{
+    height: 100%;
+    opacity: 0.96;
+}
+
+.planet-1{
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+.planet-2{
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    width: 150px;
+    height: 150px;
+}
+
+.box{
+    position: absolute;
+    right: 400px;
+    top: 50px;
+    height: 500px;
+    width: 500px;
+    background-color: var(--light-purple);
+    border-radius: 40px;
+    padding: 50px 80px;
+}
+
+.box .desc h2{
+    font-size: 2.34em;
+    text-align: center;
+}
+
+.box .desc p{
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+.form{
+    margin-top: 30px;
+}
+
+.form-group{
+    width: 100%;
+    position: relative;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 10px 20px;
+    padding-left: 40px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.form-group input::placeholder{
+    color: white;
+}
+
+.form-group ion-icon{
+    position: absolute;
+    left: 13px;
+    top: 20%;
+    color: #3a3086;
+}
+
+.functions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+}
+
+.remember label{
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.remember span{
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+.forgot a{
+    font-size: 14px;
+}
+
+.btnBx{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    background-color: #3f3188;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    width: 100%;
+}
+

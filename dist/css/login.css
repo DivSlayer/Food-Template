@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: #d10a20;
+}
+
+::selection {
+  color: #fff;
+  background: #d10a20;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input,
+button {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-red {
+  color: #d10a20 !important;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  font-weight: 500;
+  padding: 20px 50px;
+  border-radius: 40px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  letter-spacing: 2px;
+}
+
+.btn.btn-red {
+  background-color: #d10a20;
+  border: 2px solid #d10a20;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn.btn-red:hover {
+  background-color: transparent;
+  color: #d10a20;
+}
+
+.goTop {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 12345;
+  background-color: #d10a20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: unset;
+          column-gap: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: unset;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+  border: 3px solid var(--white);
+}
+
+.goTop ion-icon {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  font-size: 25px;
+}
+
+body,
+html {
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(#f0483a, #d10a20);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: unset;
+          column-gap: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: unset;
+}
+
+.container main {
+  background-color: #fff;
+  width: 75%;
+  height: 80%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 25px;
+  position: relative;
+}
+
+.container main .holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: unset;
+          column-gap: unset;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  row-gap: unset;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.container main .holder form {
+  width: 50%;
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-gap: unset;
+          column-gap: unset;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  row-gap: unset;
+}
+
+.container main .holder form .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-gap: unset;
+          column-gap: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: unset;
+  margin-bottom: 50px;
+}
+
+.container main .holder form .header h2 {
+  color: #222;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.container main .holder form .header p {
+  color: #504646;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.container main .holder form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-gap: unset;
+          column-gap: unset;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  row-gap: unset;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.container main .holder form .form-group label {
+  color: #222;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container main .holder form .form-group input {
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  width: 100%;
+  color: #222;
+  -webkit-transform: all 0.2s;
+          transform: all 0.2s;
+}
+
+.container main .holder form .form-group input:focus {
+  border-color: #222;
+}
+
+.container main .holder form .funcs {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-gap: unset;
+          column-gap: unset;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  row-gap: unset;
+}
+
+.container main .holder form .funcs .btn {
+  padding: 12px 36px;
+  letter-spacing: unset;
+}
+
+.container main .holder form .funcs .btn:hover {
+  letter-spacing: unset;
+}
+
+.container main .holder form .funcs p {
+  color: #504646;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.container main .holder form .funcs p button {
+  color: #d10a20;
+  font-size: 14px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.container main .holder form .funcs p button:hover {
+  color: blue;
+}
+
+.container main .img {
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: radial-gradient(#f0483a, #d10a20);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: unset;
+          column-gap: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: unset;
+  z-index: 999;
+}
+
+.container main .img img {
+  width: 50%;
+}
+
+.container main .img.signup {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.container main .img a {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.container main .img a ion-icon {
+  font-size: 30px;
+  color: #fff;
+}
+
+@media screen and (max-width: 990px) {
+  .container main {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container main {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container main {
+    height: unset;
+  }
+  .container main .holder {
+    width: 200%;
+  }
+  .container main .holder form.active {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .container main .img {
+    display: none;
+  }
+}
+/*# sourceMappingURL=login.css.map */
