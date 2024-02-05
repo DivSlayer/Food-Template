@@ -1,25 +1,40 @@
-
 footer {
-          width: 100%;
-          margin-top: 30px;
-          @include Flex(center, center, column);
-          .links {
-                    width: 100%;
-                    @include Flex(center, center, row, 30px);
-                    margin-bottom: 20px;
-                    li {
-                              a {
-                                        color: $light-text;
-                                        &:hover {
-                                                  color: $red;
-                                        }
-                              }
-                    }
-          }
-          .copyright {
-                    color: $light-text;
-                    font-size: 16px;
-                    font-weight: 400;
-                    margin-bottom: 20px;
-          }
+    width: 100%;
+    margin-top: 30px;
+    @include Flex(center, center, column);
+    .links {
+        width: 100%;
+        @include Flex(center, center, row, 30px);
+        margin-bottom: 20px;
+        li {
+            a {
+                color: $light-text;
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+    .copyright {
+        color: $light-text;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        a{
+            display: flex;
+            align-items: center;
+            color: $light-text;
+            margin-left: 10px;
+            img{
+                margin-right: 10px;
+                width: 30px;
+                height: 30px;
+            }
+            &:hover{
+                color: $red;
+            }
+        }
+    }
 }

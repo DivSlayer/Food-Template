@@ -468,6 +468,22 @@ footer .copyright {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+footer .copyright a {
+  display: flex;
+  align-items: center;
+  color: #504646;
+  margin-left: 10px;
+}
+footer .copyright a img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+footer .copyright a:hover {
+  color: #d10a20;
 }
 
 header {
